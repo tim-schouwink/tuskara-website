@@ -7,18 +7,10 @@ const branch =
   process.env.HEAD ||
   "main";
 
-const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
-
 export default defineConfig({
   branch,
-
-  // For local development, we don't need clientId/token
-  ...(isLocal
-    ? {}
-    : {
-        clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-        token: process.env.TINA_TOKEN,
-      }),
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "ca6ba145-ca91-461d-9f7e-47644e7a050e",
+  token: process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
