@@ -4,6 +4,16 @@ export const Pages: CollectionConfig = {
   slug: 'pages',
   admin: {
     useAsTitle: 'title',
+    livePreview: {
+      url: ({ data }) => {
+        const baseUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'https://tuskara-website.vercel.app'
+        // For home page, show root URL
+        if (data?.slug === 'home') {
+          return baseUrl
+        }
+        return `${baseUrl}/${data?.slug || ''}`
+      },
+    },
   },
   fields: [
     {
