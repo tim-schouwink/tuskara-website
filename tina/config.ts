@@ -56,9 +56,9 @@ export default defineConfig({
                 },
               },
               {
-                type: "image",
+                type: "string",
                 name: "backgroundImage",
-                label: "Background Image",
+                label: "Background Image URL",
               },
             ],
           },
@@ -93,9 +93,9 @@ export default defineConfig({
                 },
                 fields: [
                   {
-                    type: "image",
+                    type: "string",
                     name: "src",
-                    label: "Image",
+                    label: "Image URL",
                   },
                   {
                     type: "string",
@@ -131,9 +131,9 @@ export default defineConfig({
                 },
               },
               {
-                type: "image",
+                type: "string",
                 name: "image",
-                label: "Image",
+                label: "Image URL",
               },
             ],
           },
@@ -162,9 +162,9 @@ export default defineConfig({
                 },
               },
               {
-                type: "image",
+                type: "string",
                 name: "image",
-                label: "Portrait Image",
+                label: "Portrait Image URL",
               },
             ],
           },
@@ -192,9 +192,9 @@ export default defineConfig({
             },
           },
           {
-            type: "image",
+            type: "string",
             name: "coverImage",
-            label: "Cover Image",
+            label: "Cover Image URL",
           },
           {
             type: "datetime",

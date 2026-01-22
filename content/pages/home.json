@@ -2,38 +2,38 @@
   "about": {
     "title": "About Tuskara Hallo",
     "subtitle": "Tuskara is a contemporary Dutch brand,\nborn and inspired by boldness. made for professionals",
-    "backgroundImage": "/uploadshttps://images.unsplash.com/photo-1728488448101-fb760f074304?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    "backgroundImage": "https://images.unsplash.com/photo-1728488448101-fb760f074304?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   "hero": {
     "title": "interior customization that speaks bold creativity",
     "description": "A fusion of earth and cosmos, Tuskara symbolizes the meeting point between raw natural beauty and the infinite unknown. Born from African roots and shaped by a European lens, it stands for bold creativity, organic design, and the power of transformation through art.",
     "images": [
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1684261983313-9998bd4f5e93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1684261983313-9998bd4f5e93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Interior design showcase"
       },
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1621165109906-55f3020ec284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1621165109906-55f3020ec284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Modern wallcovering"
       },
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1723894960978-3f1e1cead774?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1723894960978-3f1e1cead774?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Textured wall design"
       },
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1754288191704-aca975087f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1754288191704-aca975087f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Feature interior design"
       },
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1754556227397-636ca957ea0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1754556227397-636ca957ea0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Contemporary design"
       },
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1564981598862-38f6980b4bd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1564981598862-38f6980b4bd4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Artistic wall texture"
       },
       {
-        "src": "/uploadshttps://images.unsplash.com/photo-1746173098201-d6bf92dfce54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        "src": "https://images.unsplash.com/photo-1746173098201-d6bf92dfce54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         "alt": "Design inspiration"
       }
     ]
@@ -42,12 +42,12 @@
     "label": "Tuskara's vision",
     "title": "Rooted in Heritage. Built for the Future.",
     "description": "Tuskara is more than a brand; it is a universe where art, identity, and imagination converge.\n\nWe create exclusive wallcoverings and rugs that do not merely fill a space, but transform it into another world, a world where dark tones, abstract energy, and cosmic inspiration merge with the rich, earthy power of our African roots. At Tuskara, we believe that walls and floors are not a backdrop, but the foundation of a story.\n\nOur designs are not decoration; they are dimensions.\nEvery pattern is a statement: bold, fearless, and unapologetically unique. Whether it's raw, powerful textures with character, elegant lines that create tension, or abstract forms that play with light and shadow—Tuskara creates spaces you feel before you see them.",
-    "image": "/uploadshttps://images.unsplash.com/photo-1680956987803-c0942e7b65c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    "image": "https://images.unsplash.com/photo-1680956987803-c0942e7b65c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   },
   "creator": {
     "name": "Dennis van Zanden",
     "title": "About the creator",
     "bio": "Dennis van Zanden has been in the wallpaper industry for over twenty years, blending his South African roots with Dutch heritage into a unique style. He's a big-picture thinker with a love for exploring uncharted territory, always finding fresh ways to push the limits of mixed media design.\n\nDennis's passion? Turning plain surfaces into striking pieces that catch the eye, using techniques that are both innovative and out of the ordinary. Known for his rebellious side, he's more than just a designer, he's a dreamer, pouring his love of nature, space and the universe in every piece he creates.\n\nFor him, real skill isn't just about mastering design but also about finding peace and joy in the process. His work is a true reflection of that belief, combining creative freedom with a deep, heartfelt connection to the world around him.",
-    "image": "/uploadshttps://images.unsplash.com/photo-1694458309314-b2abd0dab03c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    "image": "https://images.unsplash.com/photo-1694458309314-b2abd0dab03c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
   }
 }
