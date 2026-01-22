@@ -1,3 +1,6 @@
+import { getPayload } from 'payload'
+import config from '@payload-config'
+
 // Default content used as fallback
 export const defaultHomeContent = {
   about: {
@@ -55,8 +58,58 @@ export const defaultHomeContent = {
 
 export type HomeContent = typeof defaultHomeContent;
 
-export function getHomeContent(): HomeContent {
-  // For now, return default content
-  // Later this will fetch from Payload
-  return defaultHomeContent;
+export async function getHomeContent(): Promise<HomeContent> {
+  try {
+    const payload = await getPayload({ config })
+
+    const { docs } = await payload.find({
+      collection: 'pages',
+      where: {
+        slug: {
+          equals: 'home'
+        }
+      },
+      limit: 1,
+    })
+
+    const page = docs[0]
+
+    if (!page) {
+      return defaultHomeContent
+    }
+
+    // Map Payload data to content structure
+    return {
+      about: {
+        title: page.about?.title || defaultHomeContent.about.title,
+        subtitle: page.about?.subtitle || defaultHomeContent.about.subtitle,
+        backgroundImage: page.about?.backgroundImage || defaultHomeContent.about.backgroundImage,
+      },
+      hero: {
+        title: page.hero?.title || defaultHomeContent.hero.title,
+        description: page.hero?.description || defaultHomeContent.hero.description,
+        images: page.hero?.images?.length
+          ? page.hero.images.map((img: { src: string; alt: string }) => ({
+              src: img.src,
+              alt: img.alt,
+            }))
+          : defaultHomeContent.hero.images,
+      },
+      vision: {
+        label: page.vision?.label || defaultHomeContent.vision.label,
+        title: page.vision?.title || defaultHomeContent.vision.title,
+        description: page.vision?.description || defaultHomeContent.vision.description,
+        image: page.vision?.image || defaultHomeContent.vision.image,
+      },
+      creator: {
+        name: page.creator?.name || defaultHomeContent.creator.name,
+        title: page.creator?.title || defaultHomeContent.creator.title,
+        bio: page.creator?.bio || defaultHomeContent.creator.bio,
+        image: page.creator?.image || defaultHomeContent.creator.image,
+      },
+    }
+  } catch (error) {
+    console.error('Error fetching home content from Payload:', error)
+    return defaultHomeContent
+  }
 }

@@ -6,8 +6,10 @@ import Creator from "@/components/Creator";
 import Footer from "@/components/Footer";
 import { getHomeContent } from "@/lib/content";
 
-export default function Home() {
-  const content = getHomeContent();
+export const dynamic = 'force-dynamic'
+
+export default async function Home() {
+  const content = await getHomeContent();
 
   return (
     <main className="min-h-screen">
