@@ -10,8 +10,8 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <div className="pt-[72px]">
-        <Hero />
         <AboutHeader />
+        <Hero />
         <Vision />
         <Creator />
         <Footer />
