@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors from design */
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #cccccc;
+  --accent: #55483a;
+  --card: #1a1a1a;
+  --border: #333333;
+
+  /* Design specific colors */
+  --hero-bg: #55483a;
+  --section-dark: #1a1a1a;
+  --section-black: #000000;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-hero-bg: var(--hero-bg);
+  --color-section-dark: var(--section-dark);
+  --color-section-black: var(--section-black);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  .font-okine {
+    font-family: "MADE Okine Sans", sans-serif;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
